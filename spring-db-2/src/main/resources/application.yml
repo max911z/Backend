@@ -1,0 +1,16 @@
+spring:
+  flyway:
+    locations: classpath:migrations
+    url: jdbc:postgresql://localhost:5432/spring_db_2
+    user: hits2
+    password: hits2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_db_2
+    username: hits2
+    password: hits2
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+server:
+  port: 8191
